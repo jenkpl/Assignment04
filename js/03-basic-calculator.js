@@ -16,16 +16,16 @@ console.log(`User choice is:`, userChoice);
 // CHECK TO SEE WHAT OPERATION THEY'RE USING Use a switch statement to evaluate the operation parameter being passed in. Depending on what it is, perform that operation by calling the appropriate function from the module.
 switch(userChoice) {
     case "1" : 
-        alert(add(num1, num2));
+        alert(`Your addition result is: `+add(num1, num2));
         break;
     case "2" :
-        alert(subtract(num1, num2));
+        alert(`Your subtraction result is: `+subtract(num1, num2));
         break;
     case "3" :
-        alert(mult(num1, num2));
+        alert(`Your multiplication result is: `+mult(num1, num2));
         break;
     case "4" :
-        alert(divv(num1, num2));
+        alert(`Your division result is: `+ divv(num1, num2));
         break;
 }
 // (alternate option)CALL THE APPROPRIATE FUNCTION -using if/else and console.log
