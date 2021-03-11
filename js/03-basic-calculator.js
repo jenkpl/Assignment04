@@ -7,6 +7,9 @@ import {divv} from '../js/modules/calculator.js';
 let num1 = parseFloat(prompt(`Enter your first number.`));
 let num2 = parseFloat(prompt(`Enter your second number.`));
 let userChoice = prompt(`Enter desired operation: \n1 - addition, \n2 - subtraction, \n3 - multiplication, \nor 4 - division.`);
+if (isNaN(userChoice) || (userChoice > 4) || (userChoice <=0)) {
+    alert(`You must enter 1, 2, 3 or 4. \nPlease refresh the page to try again.`);
+}
 console.log(num1);
 console.log(num2);
 console.log(`User choice is:`, userChoice);
@@ -25,7 +28,7 @@ switch(userChoice) {
         alert(divv(num1, num2));
         break;
 }
-// CALL THE APPROPRIATE FUNCTION
+// (alternate option)CALL THE APPROPRIATE FUNCTION -using if/else and console.log
 // if (userChoice === "1") {
 //    console.log(`Addition result is:`,add(num1, num2));
 // }
